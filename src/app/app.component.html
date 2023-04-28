@@ -12,7 +12,9 @@
           Média = {{mediaCadu}}<br>
         </p>
         <div *ngIf="mediaCadu > 7; else elseBlock"><p class="card-text">Aprovado</p></div>
-        <ng-template #elseBlock>Reprovado</ng-template>
+        <ng-template #elseBlock>
+          <p class="card-text">Reprovado</p>
+        </ng-template>
       </div>
     </div>
 
@@ -30,7 +32,11 @@
         <div *ngIf="mediaJoao > 7">
           <p class="card-text">Aprovado</p>
         </div>
-        <ng-template #elseBlock>Reprovado</ng-template>
+        <ng-template #elseBlock>
+          <div>
+            <p class="card-text">Reprovado</p>
+          </div>
+        </ng-template>
       </div>
     </div>
 
