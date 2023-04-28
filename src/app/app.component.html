@@ -1,0 +1,58 @@
+
+<div id="container">
+    <!--cadu-->
+
+    <div class="card" style="width: 18rem;">
+      <img src="../assets/img/cadu.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{nomeCadu}}</h5>
+        <p class="card-text">
+          Nota 1 = {{n1Cadu}}<br>
+          Nota 2 = {{n2Cadu}}<br>
+          Média = {{mediaCadu}}<br>
+        </p>
+        <div *ngIf="mediaCadu > 7; else elseBlock"><p class="card-text">Aprovado</p></div>
+        <ng-template #elseBlock>Reprovado</ng-template>
+      </div>
+    </div>
+
+    <!--joaofrango-->
+
+    <div class="card" style="width: 18rem;">
+      <img src="../assets/img/joaofrango.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{nomeJoao}}</h5>
+        <p class="card-text">
+          Nota 1 = {{n1Joao}}<br>
+          Nota 2 = {{n2Joao}}<br>
+          Média = {{mediaJoao}}<br>
+        </p>
+        <div *ngIf="mediaJoao > 7">
+          <p class="card-text">Aprovado</p>
+        </div>
+        <ng-template #elseBlock>Reprovado</ng-template>
+      </div>
+    </div>
+
+
+    <!--gelado-->
+
+    <div class="card" style="width: 18rem;">
+      <img src="../assets/img/gelado.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{nomeGelado}}</h5>
+        <p class="card-text">
+          Nota 1 = {{n1Gelado}}<br>
+          Nota 2 = {{n2Gelado}}<br>
+          Média = {{mediaGelado}}<br>
+        </p>
+        <div *ngIf="mediaGelado > 7">
+          <p class="card-text">Aprovado</p>
+        </div>
+        <ng-template #elseBlock>Reprovado</ng-template>
+      </div>
+    </div>
+
+</div>
+<router-outlet></router-outlet>
+
