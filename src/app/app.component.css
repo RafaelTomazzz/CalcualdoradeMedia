@@ -1,23 +1,17 @@
 #container
 {
   position: relative;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: brown;
+  margin-top: 11.5%;
+  
 }
 
 .card-img-top
 {
   height: 300px;
-}
-
-.card 
-{
-position: absolute;
 }
 
 .card-title
